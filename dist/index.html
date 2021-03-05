@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Book</title>
+<link href="./assets/css/files.css" rel="stylesheet"></head>
+
+<body>
+
+    <div class="container-fluid mt-4">
+        <h1 class="text-center display-4">My NoteBook</h1>
+        <br>
+        <hr><br>
+
+        <div class="row justify-content-between mt-5">
+            <div class="col-md-5 pr-5">
+                <div class="text-content">
+                    <div class="form-group">
+                        <textarea id="textarea" cols="10" rows="6" class="form-control"
+                            placeholder="write your note.."></textarea>
+                    </div>
+                    <button id="btn-apply" class="btn btn-primary btn-block">Apply Note</button>
+                    <div id="message"></div>
+                </div>
+            </div>
+            <div class="col-md-7 pl-4">
+                <div class="note-content">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th><i class="far fa-clipboard mr-2"></i>Notes</th>
+                                <th><i class="far fa-clock mr-2"></i>date</th>
+                                <th class="delete"><i class="far fa-trash-alt mr-2"></i>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="./assets/js/bundle.js"></script><script src="./assets/js/575.js"></script><script src="./assets/js/files.js"></script></body>
+
+</html>
