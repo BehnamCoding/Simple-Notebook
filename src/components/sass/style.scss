@@ -1,0 +1,53 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+
+body {
+    padding: 20px;
+}
+
+.container-fluid {
+    width: 95%;
+    .row {
+        .text-content {
+            .form-group {
+                textarea {
+                    padding: 13px;
+                    &:focus {
+                        box-shadow: none;
+                        border-color: #4dafff !important;
+                    }
+                }
+            }
+        }
+        .note-content {
+            .table {
+                thead {
+                    tr {
+                        th {
+                            text-align: left;
+                            &.delete {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            text-align: left;
+                            padding-right: 0;
+                            vertical-align: middle;
+                            &.remove-item {
+                                color: red;
+                                font-size: 23px;
+                                font-weight: bold;
+                                cursor: pointer;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
